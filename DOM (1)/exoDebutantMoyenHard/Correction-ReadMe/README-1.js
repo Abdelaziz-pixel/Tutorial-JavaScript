@@ -65,3 +65,11 @@ while(n !=100);
     console.log(n);
     n ++;
 }
+
+//exercise5
+var n = 0;
+while(n !=100);
+{
+    console.log(n);
+    n = n+2;
+}
