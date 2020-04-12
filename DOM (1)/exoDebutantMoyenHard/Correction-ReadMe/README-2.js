@@ -140,3 +140,21 @@ function showPeople(arrayPeople)
 }
 
  showPeople(people);
+
+ //Exercice 8 : Le max d'un tableau
+var arrayOfNumbers = [12, 45, 190, 150, 8, 21];
+
+function findBiggestNumber(numbers) 
+{
+ var biggestNumber = 0;
+ for(var i = 0; i<numbers.length; i++) 
+ {
+   if(numbers[i] > biggestNumber) 
+   {
+     biggestNumber = numbers[i];
+   }
+ }
+ console.log(biggestNumber);
+}
+
+findBiggestNumber(arrayOfNumbers);
