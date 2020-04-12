@@ -23,3 +23,22 @@ function biggestNumber(number, number1, number2, number3) {
     }
   }
   biggestNumber(number, number1, number2, number3);
+
+  //exercise2
+var userAge = Number(prompt("Quel âge avez-vous ?"));
+if (userAge !== 0) {
+  if (userAge <= 0) {
+    alert("Rentrez votre vrai âge !"); 
+  }
+  if (userAge >= 21) {
+    alert("vous pouvez entrer !");
+  }
+  if (userAge % 2 === 0) {
+    alert("Votre âge est paire");
+  }
+  if (Number.isInteger(Math.sqrt(userAge))) {
+    alert("Votre âge est un carré");
+  }
+} else {
+  alert("Vous n'avez rien rentré !")
+}
