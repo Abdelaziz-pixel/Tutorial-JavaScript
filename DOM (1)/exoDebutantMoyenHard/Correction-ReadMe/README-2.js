@@ -175,3 +175,43 @@ for(var i=0; i < tasks.length; i++)
 {
  console.log(tasks[i]);
 }
+
+// exercise 10 :  shifumi
+var continueGame = new Boolean("true");
+console.log("Welcome on shifumi game")
+
+while (continueGame)
+{
+    var scoreUser=0;
+    var scoreComputer=0;
+    var userName = prompt("quel est votre nom ou pseudo ? ");
+    while (scoreUser && scoreComputer !=3)
+    {
+        var answer = prompt("veuillez entrez votre choix (pierre, papier, ciseaux)").toLowerCase();
+        var listActions = ["pierre","papier","ciseaux"];
+        var randomAction = listactions[Math.floor(Math.random()*listactions.length)];
+        console.log(randomaction);
+        if (answer !=randomAction )
+        {
+            if (answer == "pierre" && randomAction == "ciseaux" 
+            || answer == "feuille" && randomAction == "pierre"
+            || answer == "ciseaux" && randomAction == "feuille")
+                scoreUser += 1;
+            else
+            {
+                scoreComputer += 1;
+            }
+        console.log("le score de l'ordi est",scoreComputer,"votre score est ",scoreUser);
+        var replay = prompt("voulez vous rejouer ? (tapez non pour quitter oui pour rejouer");
+        if (replay == "non")
+        {
+            continueGame == false;
+        }
+        else
+        {
+            continueGame == true;
+        }
+    } 
+
+}
+}
