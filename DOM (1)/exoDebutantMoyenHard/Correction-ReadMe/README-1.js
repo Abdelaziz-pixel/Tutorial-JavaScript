@@ -94,3 +94,13 @@ function perimeterCircle()
     var perimeter = (2 * Math.PI * rayon).toFixed(2);
     console.log("Votre cercle a un perimètre de " + perimeter + " cm");
 }
+
+//exercise8
+
+var n = 0;
+var symbol = "*"
+while (n != 6)
+{
+    console.log(n*symbol)
+    n ++;
+}
