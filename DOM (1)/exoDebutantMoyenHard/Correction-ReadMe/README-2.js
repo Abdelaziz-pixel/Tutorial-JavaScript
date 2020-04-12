@@ -73,3 +73,20 @@ function factorielle(value)
 }
 
 factorielle(4);
+
+//Exercice 5 : Les tirets ça compte !
+
+function toUnderscore(string) 
+{
+ if( typeof string === "string") 
+ {
+   string = string.replace(/-/g, "_");
+   console.log(string);
+ }
+ else
+{
+   console.log("Attention il faut passer une string en argument");
+}
+}
+
+toUnderscore("attention-aux-tirets")
