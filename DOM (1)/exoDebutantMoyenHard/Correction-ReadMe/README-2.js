@@ -52,3 +52,24 @@ function isOdd(amont)
 }
 
 isOdd(4);
+
+//Exercice 4 : Vous avez dit factorielle ?
+
+function factorielle(value) 
+{
+ if(Number.isInteger(value)) 
+ {
+    var result = 1;
+    for(var i=1; i < value; i++) 
+    {
+    result += result * i;
+   }
+   console.log(result);
+ }
+ else
+{
+   console.log("erreur");
+}
+}
+
+factorielle(4);
