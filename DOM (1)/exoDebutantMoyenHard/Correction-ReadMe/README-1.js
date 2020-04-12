@@ -81,3 +81,16 @@ function filling(lenght,width,depth,debit)
     console.log(m3);
 }
 filling(5,4,2,3)
+
+// exercise7
+var ray = Number(prompt("veuillez entrez le rayon du cercle"));
+function areaCircle()
+{
+    var area = (Math.sqrt(rayon) * Math.PI).toFixed(2);
+    console.log("Votre cercle a une aire de " + area + " cm carrés");
+}
+function perimeterCircle()
+{
+    var perimeter = (2 * Math.PI * rayon).toFixed(2);
+    console.log("Votre cercle a un perimètre de " + perimeter + " cm");
+}
