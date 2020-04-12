@@ -73,3 +73,11 @@ while(n !=100);
     console.log(n);
     n = n+2;
 }
+
+//exercise6
+function filling(lenght,width,depth,debit)
+{
+    var m3 = (lenght*width*depth)/debit;
+    console.log(m3);
+}
+filling(5,4,2,3)
