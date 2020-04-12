@@ -42,3 +42,18 @@ if (userAge !== 0) {
 } else {
   alert("Vous n'avez rien rentré !")
 }
+
+//exercise3
+var hiddeNumber = 32;
+var userNumber = null;
+
+while (hiddeNumber !== userNumber) {
+  userNumber = Number(prompt("Quel est le nombre caché ?"));
+  if (userNumber > hiddeNumber) {
+    alert("Trop haut !");
+  } else if (userNumber < hiddeNumber) {
+    alert("Trop bas");
+  } else {
+    alert("Trouvé !");
+  }
+}
