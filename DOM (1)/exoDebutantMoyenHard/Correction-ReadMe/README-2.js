@@ -36,3 +36,19 @@ for(var i=1; i <= 4; i++)
 }
 
 console.log(matrix);
+
+//Exercice 3 : Nombre paire ?
+
+function isOdd(amont) 
+{
+ amont = Math.round(Number(amont));
+ if(amont%2 === 0) {
+   console.log(true);
+ }
+ else 
+ {
+   console.log(false);
+ }
+}
+
+isOdd(4);
