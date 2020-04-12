@@ -158,3 +158,20 @@ function findBiggestNumber(numbers)
 }
 
 findBiggestNumber(arrayOfNumbers);
+
+//Exercice 9 : Une to do list
+
+var tasks = [];
+
+var task;
+
+while(task !== "fin") 
+{
+ task = prompt("Que devez-vous faire ?");
+ tasks.push(task);
+}
+
+for(var i=0; i < tasks.length; i++) 
+{
+ console.log(tasks[i]);
+}
