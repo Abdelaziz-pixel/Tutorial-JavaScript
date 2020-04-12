@@ -105,3 +105,38 @@ var shoppingList =
 console.log("Il faut acheter : " + shoppingList[0]);
 console.log("Il faut acheter : " + shoppingList[shoppingList.length - 1]);
 console.log("Il faut acheter : " + shoppingList[2]);
+
+//Exercice 7 : Le tableau d'un homme
+
+var people = 
+[
+ [
+   "Farid",
+   "Homme",
+   33
+ ],
+ [
+   "Ida",
+   "Femme",
+   24
+ ],
+ [
+   "Mayahdine",
+   "Homme",
+   34
+ ]
+];
+
+function showPeople(arrayPeople) 
+{
+ for(var i = 0; i < arrayPeople.length; i++) 
+ {
+   var singlePeople = arrayPeople[i];
+   for(var j = 0; j < singlePeople.length; j++ ) 
+   {
+     console.log(singlePeople[j]);
+   }
+ }
+}
+
+ showPeople(people);
