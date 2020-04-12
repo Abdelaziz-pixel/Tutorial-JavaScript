@@ -90,3 +90,18 @@ function toUnderscore(string)
 }
 
 toUnderscore("attention-aux-tirets")
+
+//Exercice 6 : Entraînez-vous avec les tableaux
+
+var shoppingList = 
+[
+ "frites",
+ "yahourt",
+ "steack",
+ "eau",
+ "legumes"
+];
+
+console.log("Il faut acheter : " + shoppingList[0]);
+console.log("Il faut acheter : " + shoppingList[shoppingList.length - 1]);
+console.log("Il faut acheter : " + shoppingList[2]);
